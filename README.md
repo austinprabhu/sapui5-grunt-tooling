@@ -20,7 +20,7 @@ Run npm install to install the dependencies. Run build command to to start the w
 
 ```
 npm install
-npm run build
+npm run serve
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in browser
