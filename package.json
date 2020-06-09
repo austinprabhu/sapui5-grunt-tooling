@@ -13,6 +13,6 @@
     "jit-grunt": "^0.10.0"
   },
   "scripts": {
-    "build": "grunt"
+    "serve": "grunt"
   }
 }
