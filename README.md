@@ -20,6 +20,7 @@ git clone https://github.com/austinprabhu/sapui5-grunt-tooling
 Run npm install to install the dependencies. Run build command to to start the webserver.
 
 ```
+cd sapui5-grunt-tooling
 npm install
 npm run serve
 ```
