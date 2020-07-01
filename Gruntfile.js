@@ -1,6 +1,18 @@
 module.exports = function (grunt) {
 	'use strict';
 
+	//load env config
+	require('dotenv').config();
+	//get values - assign defaults
+	var LOCAL_PORT = process.env.LOCAL_PORT || '3000';
+	var ODATA_HOST = process.env.ODATA_HOST || 'services.odata.org';
+	var ODATA_PORT = process.env.ODATA_PORT || '443';
+	var ODATA_HTTPS = process.env.ODATA_HTTPS || true;
+	var UI5_HOST = process.env.UI5_HOST || 'sapui5.hana.ondemand.com'
+	var UI5_PORT = process.env.UI5_PORT || '443'
+	var UI5_HTTPS = process.env.UI5_HTTPS || true;
+ 	var UI5_VERSION = process.env.UI5_VERSION || '1.52.9'
+
 	// load grunt plugins
 	require('jit-grunt')(grunt, {
 		configureProxies: 'grunt-connect-proxy'
@@ -12,7 +24,7 @@ module.exports = function (grunt) {
 		settings: {
 			connect: {
 				host: 'localhost',
-				port: '3000'
+				port: LOCAL_PORT
 			},
 			callback: {
 				host: '127.0.0.1',
