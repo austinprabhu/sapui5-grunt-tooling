@@ -31,16 +31,16 @@ module.exports = function (grunt) {
 				port: '80'
 			},
 			odataProxy: {
-				host: 'services.odata.org',
-				port: '443',
-				https: true
+				host: ODATA_HOST,
+				port: ODATA_PORT,
+				https: ODATA_HTTPS
 
 			},
 			ui5Proxy: {
-				host: 'sapui5.hana.ondemand.com',
-				port: '443',
-				https: true,
-				ui5Version: '1.52.9'
+				host: UI5_HOST,
+				port: UI5_PORT,
+				https: UI5_HTTPS,
+				ui5Version: UI5_VERSION
 				//ui5Version: '1.58.7'
 			}
 		},

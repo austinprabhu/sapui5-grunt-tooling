@@ -29,24 +29,24 @@ Open [http://localhost:3000](http://localhost:3000) in browser
 
 ### How to use in your application
 
-copy package.json and gruntfile.js from repo into your application. 
+copy/migrate package.json, .env and gruntfile.js from repo into your application. 
 
-Following parameters can be modified in gruntfile.js
+Following parameters can be modified in .env
 
 Modify host/port/htts settings to match your backend gateway server 
 ```
-odataProxy: {
-				host: 'services.odata.org',
-				port: '443',
-				https: true
+ODATA_HOST = 'services.odata.org'
+ODATA_PORT = '443'
+ODATA_HTTPS = true
+
 ```
 
 Modify UI5 Version parameter to match your gateway server UI5 version
 ```
-ui5Proxy: {
-				host: 'sapui5.hana.ondemand.com',
-				port: '443',
-				https: true,
-				ui5Version: '1.52.9'
+UI5_HOST = 'sapui5.hana.ondemand.com'
+UI5_PORT = '443'
+UI5_HTTPS = true;
+UI5_VERSION = '1.52.9'
+
 ```
 
